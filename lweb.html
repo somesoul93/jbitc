@@ -12,6 +12,8 @@
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet"> 
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -53,25 +55,33 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
-                <a href="./index.html">Home</a>
+                <a href="./index.html"><i class="icon-home"> </i>&nbsp; Home</a>
+              </li>
+              <li class="dropdown">
+              	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="icon-exclamation">&nbsp; Competition</i>
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="">
+                    <a href="./lcc.html"><i class="icon-book"> </i>&nbsp; Lomba Cerdas Cermat</a>
+                  </li>
+                  <li class="">
+                    <a href="./lblog.html"><i class="icon-group"> </i>&nbsp; Lomba Blog</a>
+                  </li>
+                  <li class="">
+                    <a href="./lpemrograman.html"><i class="icon-code-fork"> </i>&nbsp; Lomba Pemrograman</a>
+                  </li>
+                  <li class="active">
+                    <a href="./lweb.html"><i class="icon-code"> </i>&nbsp; Lomba Web</a>
+                  </li>
+                </ul>
               </li>
               <li class="">
-                <a href="./lcc.html">Lomba Cerdas Cermat</a>
+                <a href="./about.html"><i class="icon-user"> </i>&nbsp; Tentang</a>
               </li>
               <li class="">
-                <a href="./lblog.html">Lomba Blog</a>
-              </li>
-              <li class="">
-                <a href="./lpemrograman.html">Lomba Pemrograman</a>
-              </li>
-              <li class="active">
-                <a href="./lweb.html">Lomba Web</a>
-              </li>
-              <li class="">
-                <a href="./about.html">Tentang</a>
-              </li>
-              <li class="">
-                <a href="./contact.html">Hubungi Kami</a>
+                <a href="./contact.html"><i class="icon-phone"> </i>&nbsp; Hubungi Kami</a>
               </li>
             </ul>
           </div>
@@ -85,7 +95,8 @@
 ================================================== -->
 <header class="jumbotron subhead">
   <div class="container">
-    <h1>Lomba Web</h1>
+    <!--<h1>Lomba Web</h1> -->
+    <img src="assets/img/lweb2.png" width="140">
     <p class="lead"> "is your 404 page found?"
   </div>
 </header>
@@ -115,17 +126,7 @@
             <h1>Definisi Perlombaan</h1>
           </div>
 
-          <h3>Individual or compiled</h3>
-          <p>Plugins can be included individually (though some have required dependencies), or all at once. Both <strong>bootstrap.js</strong> and <strong>bootstrap.min.js</strong> contain all plugins in a single file.</p>
-
-          <h3>Data attributes</h3>
-          <p>You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first class API and should be your first consideration when using a plugin.</p>
-
-          <p>That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the body namespaced with `'data-api'`. This looks like this:
-          <pre class="prettyprint linenums">$('body').off('.data-api')</pre>
-
-          <p>Alternatively, to target a specific plugin, just include the plugin's name as a namespace along with the data-api namespace like this:</p>
-          <pre class="prettyprint linenums">$('body').off('.alert.data-api')</pre>
+          
         </section>
 
 
@@ -136,17 +137,33 @@
           <div class="page-header">
             <h1>Tanggal - Penting</h1>
           </div>
-          <h3>About transitions</h3>
-          <p>For simple transition effects, include <strong>bootstrap-transition.js</strong> once alongside the other JS files. If you're using the compiled (or minified) <strong>bootstrap.js</strong>, there is no need to include this&mdash;it's already there.</p>
-          <h3>Use cases</h3>
-          <p>A few examples of the transition plugin:</p>
-          <ul>
-            <li>Sliding or fading in modals</li>
-            <li>Fading out tabs</li>
-            <li>Fading out alerts</li>
-            <li>Sliding carousel panes</li>
-          </ul>
+          <table class="table table-hover">
+				<thead>
+                	<tr class="info">
+                        <th> Event </th>
+                        <th></th>
+                        <th> Tanggal </th>
+                    </tr>
+                </thead>
+				<tbody>
+                    <tr class="info">
+                        <td>Pendaftaran dan Seleksi </td>
+                        <td> : </td>
+                        <td>10 Juni– 23 September 2013</td>
+                    </tr>
+                    <tr>
+                        <td> Pengumuman Finalis </td>
+                        <td> : </td>
+                        <td>25 September 2013</td>
+                    </tr>
+                    <tr class="info">
+                        <td> Presentasi Finalis </td>
+                        <td> : </td>
+                        <td> 5 Oktober 2013 </td>
+                    </tr>
 
+            	</tbody>
+			</table>
         </section>
         
         
@@ -157,17 +174,7 @@
             <h1>Syarat dan Ketentuan Perlombaan</h1>
           </div>
 
-          <h3>Individual or compiled</h3>
-          <p>Plugins can be included individually (though some have required dependencies), or all at once. Both <strong>bootstrap.js</strong> and <strong>bootstrap.min.js</strong> contain all plugins in a single file.</p>
-
-          <h3>Data attributes</h3>
-          <p>You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first class API and should be your first consideration when using a plugin.</p>
-
-          <p>That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the body namespaced with `'data-api'`. This looks like this:
-          <pre class="prettyprint linenums">$('body').off('.data-api')</pre>
-
-          <p>Alternatively, to target a specific plugin, just include the plugin's name as a namespace along with the data-api namespace like this:</p>
-          <pre class="prettyprint linenums">$('body').off('.alert.data-api')</pre>
+          
         </section>
         
         <!-- Overview
@@ -177,17 +184,7 @@
             <h1>Tahapan Perlombaan</h1>
           </div>
 
-          <h3>Individual or compiled</h3>
-          <p>Plugins can be included individually (though some have required dependencies), or all at once. Both <strong>bootstrap.js</strong> and <strong>bootstrap.min.js</strong> contain all plugins in a single file.</p>
-
-          <h3>Data attributes</h3>
-          <p>You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first class API and should be your first consideration when using a plugin.</p>
-
-          <p>That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the body namespaced with `'data-api'`. This looks like this:
-          <pre class="prettyprint linenums">$('body').off('.data-api')</pre>
-
-          <p>Alternatively, to target a specific plugin, just include the plugin's name as a namespace along with the data-api namespace like this:</p>
-          <pre class="prettyprint linenums">$('body').off('.alert.data-api')</pre>
+          
         </section>
         
         <!-- Overview
@@ -197,17 +194,7 @@
             <h1>Pendaftaran Lomba</h1>
           </div>
 
-          <h3>Individual or compiled</h3>
-          <p>Plugins can be included individually (though some have required dependencies), or all at once. Both <strong>bootstrap.js</strong> and <strong>bootstrap.min.js</strong> contain all plugins in a single file.</p>
-
-          <h3>Data attributes</h3>
-          <p>You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first class API and should be your first consideration when using a plugin.</p>
-
-          <p>That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the body namespaced with `'data-api'`. This looks like this:
-          <pre class="prettyprint linenums">$('body').off('.data-api')</pre>
-
-          <p>Alternatively, to target a specific plugin, just include the plugin's name as a namespace along with the data-api namespace like this:</p>
-          <pre class="prettyprint linenums">$('body').off('.alert.data-api')</pre>
+          
         </section>
         
         <!-- Overview
@@ -217,17 +204,7 @@
             <h1>Hadiah</h1>
           </div>
 
-          <h3>Individual or compiled</h3>
-          <p>Plugins can be included individually (though some have required dependencies), or all at once. Both <strong>bootstrap.js</strong> and <strong>bootstrap.min.js</strong> contain all plugins in a single file.</p>
 
-          <h3>Data attributes</h3>
-          <p>You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first class API and should be your first consideration when using a plugin.</p>
-
-          <p>That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the body namespaced with `'data-api'`. This looks like this:
-          <pre class="prettyprint linenums">$('body').off('.data-api')</pre>
-
-          <p>Alternatively, to target a specific plugin, just include the plugin's name as a namespace along with the data-api namespace like this:</p>
-          <pre class="prettyprint linenums">$('body').off('.alert.data-api')</pre>
         </section>
 
 
@@ -244,7 +221,15 @@
 	<footer class="footer">
     	<div class="container">
 	    	<p class="text-center"> <button class="btn btn-primary" type="button">Sponsored by :</button></p>
-    	  <p class="text-center">&nbsp;</p>
+    	  <p class="text-center">
+	            
+                <br>
+                <img src="assets/img/UM 2.png" width="70"> &nbsp;
+                <img src="assets/img/UM.png" width="70"> &nbsp;
+                <img src="assets/img/hme.png" width="70"> &nbsp;
+                <img src="assets/img/logo140.png" width="70"> &nbsp;
+                <br><br>
+            </p>
             <div class="progress progress-striped active">
 			  <div class="bar" style="width: 100%;"></div>
 		  </div>
